@@ -1,14 +1,18 @@
 ﻿namespace ebis.MAUI;
+
+using ebis.MAUI.ViewModel;
 using Microsoft.Maui.Controls;
 using MySql.Data.MySqlClient;
 using System;
 
 public partial class MainPage : ContentPage
 {
+   
 
     public MainPage()
     {
         InitializeComponent();
+        BindingContext = new StudentsViewModel();
     }
 
     private void OnCounterClicked(object sender, EventArgs e)
@@ -23,5 +27,7 @@ public partial class MainPage : ContentPage
 
         DisplayAlert("Connexion MySQL", message, "OK");
     }
+   
+
 }
 

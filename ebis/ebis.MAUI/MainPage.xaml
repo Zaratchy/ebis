@@ -35,6 +35,20 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
+            <StackLayout Margin="50">
+                <CollectionView ItemsSource="{Binding StudentsCollection}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout BackgroundColor="Pink" Orientation="Horizontal" HeightRequest="50">
+                                <Label Text="{Binding FirstName}"/>
+                                <Label Text="{Binding LastName}"/>
+                                <Label Text="{Binding Phone}"/>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+
         </VerticalStackLayout>
     </ScrollView>
 
