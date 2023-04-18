@@ -1,24 +1,27 @@
 ﻿namespace ebis.MAUI;
+using Microsoft.Maui.Controls;
+using MySql.Data.MySqlClient;
+using System;
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
 
-	public MainPage()
-	{
-		InitializeComponent();
-	}
+    public MainPage()
+    {
+        InitializeComponent();
+    }
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
+    private void OnCounterClicked(object sender, EventArgs e)
+    {
+        string connectionString = "server=localhost;user=root;database=ebis;port=3306;password=";
+        using MySqlConnection connection = new MySqlConnection(connectionString);
+        connection.Open();
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+        string message = connection.State == System.Data.ConnectionState.Open
+            ? "Connexion réussie à MySQL en local!"
+            : "Impossible de se connecter à MySQL en local.";
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+        DisplayAlert("Connexion MySQL", message, "OK");
+    }
 }
 
