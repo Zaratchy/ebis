@@ -1,6 +1,6 @@
 ﻿namespace ebis.MAUI.Model;
 
-public class Students
+public class Bornes
 {
     private string _firstName = string.Empty;
     private string _lastName = string.Empty;
@@ -24,7 +24,7 @@ public class Students
         set { _phone = value; }
     }
 
-    public Students(string firstName, string lastName, string phone)
+    public Bornes(string firstName, string lastName, string phone)
     {
         FirstName = firstName;
         LastName = lastName;

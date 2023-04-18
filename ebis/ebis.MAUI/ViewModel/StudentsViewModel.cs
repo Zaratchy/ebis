@@ -2,22 +2,20 @@
 
 namespace ebis.MAUI.ViewModel;
 
-
-
-public class StudentsViewModel
+public class BornesViewModel
 {
-    private List<Students> studentsCollection = new List<Students>();
+    private List<Bornes> bornesCollection = new List<Bornes>();
 
-    public StudentsViewModel()
+    public BornesViewModel()
     {
-        studentsCollection.Add(new Students("Marie", "White", "+1-809-554-6055"));
-        studentsCollection.Add(new Students("Paola", "Pullman", "+1-809-506-5655"));
-        studentsCollection.Add(new Students("Joseph", "McDonalds", "+1-809-684-4876"));
+        bornesCollection.Add(new Bornes("Marie", "White", "+1-809-554-6055"));
+        bornesCollection.Add(new Bornes("Paola", "Pullman", "+1-809-506-5655"));
+        bornesCollection.Add(new Bornes("Joseph", "McDonalds", "+1-809-684-4876"));
     }
 
-    public List<Students> StudentsCollection
+    public List<Bornes> StudentsCollection
     {
-        get { return studentsCollection; }
-        set { studentsCollection = value; }
+        get { return bornesCollection; }
+        set { bornesCollection = value; }
     }
 }

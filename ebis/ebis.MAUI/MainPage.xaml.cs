@@ -12,7 +12,7 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        BindingContext = new StudentsViewModel();
+        BindingContext = new BornesViewModel();
     }
 
     private void OnCounterClicked(object sender, EventArgs e)

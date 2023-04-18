@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\liber\OneDrive\Documents\Valarep\cours\C#\project_ebis\ebis\ebis.MAUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-04-18T20:29:31.470</Modified>
+      <Modified>2023-04-18T21:43:17.843</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\liber\OneDrive\Documents\Valarep\cours\C#\project_ebis\ebis\ebis.MAUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-04-18T20:29:28.998</Modified>
+      <Modified>2023-04-18T21:43:17.217</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liber\OneDrive\Documents\Valarep\cours\C#\project_ebis\ebis\ebis.MAUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ebis.MAUI.runtimeconfig.json">
       <PackagePath>ebis.MAUI.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liber\OneDrive\Documents\Valarep\cours\C#\project_ebis\ebis\ebis.MAUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ebis.MAUI.dll">
       <PackagePath>ebis.MAUI.dll</PackagePath>
-      <Modified>2023-04-18T20:29:22.252</Modified>
+      <Modified>2023-04-18T21:43:15.777</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liber\OneDrive\Documents\Valarep\cours\C#\project_ebis\ebis\ebis.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ebis.MAUI.exe</PackagePath>
-      <Modified>2023-04-18T20:29:22.304</Modified>
+      <Modified>2023-04-18T21:43:15.790</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liber\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.2\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -991,7 +991,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\liber\OneDrive\Documents\Valarep\cours\C#\project_ebis\ebis\ebis.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ebis.MAUI.deps.json">
       <PackagePath>ebis.MAUI.deps.json</PackagePath>
-      <Modified>2023-04-18T20:29:30.804</Modified>
+      <Modified>2023-04-18T21:43:17.616</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.52\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
