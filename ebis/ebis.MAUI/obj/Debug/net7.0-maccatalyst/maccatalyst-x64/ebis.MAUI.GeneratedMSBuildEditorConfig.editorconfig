@@ -8,34 +8,40 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ebis.MAUI
-build_property.ProjectDir = C:\VSProject\ebis\ebis\ebis.MAUI\
+build_property.ProjectDir = C:\Users\Pierre\OneDrive - LYRECO MANAGEMENT\Documents\CDA\Project-eBIS\ebis\ebis.MAUI\
 
-[C:/VSProject/ebis/ebis/ebis.MAUI/App.xaml]
+[C:/Users/Pierre/OneDrive - LYRECO MANAGEMENT/Documents/CDA/Project-eBIS/ebis/ebis.MAUI/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ebis.MAUI.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/VSProject/ebis/ebis/ebis.MAUI/AppShell.xaml]
+[C:/Users/Pierre/OneDrive - LYRECO MANAGEMENT/Documents/CDA/Project-eBIS/ebis/ebis.MAUI/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ebis.MAUI.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/VSProject/ebis/ebis/ebis.MAUI/MainPage.xaml]
+[C:/Users/Pierre/OneDrive - LYRECO MANAGEMENT/Documents/CDA/Project-eBIS/ebis/ebis.MAUI/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ebis.MAUI.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/VSProject/ebis/ebis/ebis.MAUI/Resources/Styles/Colors.xaml]
+[C:/Users/Pierre/OneDrive - LYRECO MANAGEMENT/Documents/CDA/Project-eBIS/ebis/ebis.MAUI/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ebis.MAUI.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/VSProject/ebis/ebis/ebis.MAUI/Resources/Styles/Styles.xaml]
+[C:/Users/Pierre/OneDrive - LYRECO MANAGEMENT/Documents/CDA/Project-eBIS/ebis/ebis.MAUI/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ebis.MAUI.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/Pierre/OneDrive - LYRECO MANAGEMENT/Documents/CDA/Project-eBIS/ebis/ebis.MAUI/View/Technician.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ebis.MAUI.View.Technician.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Technician.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Technician.xaml

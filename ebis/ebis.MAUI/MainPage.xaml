@@ -6,6 +6,7 @@
              x:DataType="vm:StatViewModel"
              Title="Liste des bornes">
 
+
     <StackLayout>
         <ListView ItemsSource="{Binding Resultats}">
             <ListView.ItemTemplate>

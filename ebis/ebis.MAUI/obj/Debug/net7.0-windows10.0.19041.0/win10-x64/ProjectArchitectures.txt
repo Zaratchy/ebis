@@ -1,1 +1,1 @@
-C:\VSProject\ebis\ebis\ebis.MAUI\ebis.MAUI.csproj;x64
+C:\Users\Pierre\OneDrive - LYRECO MANAGEMENT\Documents\CDA\Project-eBIS\ebis\ebis.MAUI\ebis.MAUI.csproj;x64
