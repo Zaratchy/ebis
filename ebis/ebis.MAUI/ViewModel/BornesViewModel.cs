@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using ebis.MAUI.View;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -14,6 +15,8 @@ namespace ebis.MAUI.ViewModel
     {
         private string connectionString = "server=localhost;user=root;database=ebis;port=3306;password=";
 
+        
+
         public ObservableCollection<string> Resultats { get; set; }
 
         public StatViewModel()
@@ -21,6 +24,7 @@ namespace ebis.MAUI.ViewModel
             Resultats = new ObservableCollection<string>();
         }
 
+      
         public void SelectToDatabase()
         {
             MySqlConnection conn = new MySqlConnection(this.connectionString);
@@ -47,4 +51,6 @@ namespace ebis.MAUI.ViewModel
             Debug.WriteLine("Done.");
         }
     }
+
+
 }
