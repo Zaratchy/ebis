@@ -40,4 +40,5 @@ namespace ebis.MAUI.Model
             }
         }
     }
+
 }

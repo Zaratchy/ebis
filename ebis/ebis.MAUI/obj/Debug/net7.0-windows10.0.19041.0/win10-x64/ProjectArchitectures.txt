@@ -1,1 +1,1 @@
-C:\VSProject\ebis\ebis\ebis.MAUI\ebis.MAUI.csproj;x64
+C:\Users\liber\OneDrive\Documents\Valarep\cours\C#\ebis\ebis\ebis.MAUI\ebis.MAUI.csproj;x64

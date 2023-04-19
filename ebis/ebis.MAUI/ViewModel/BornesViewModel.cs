@@ -28,15 +28,16 @@ namespace ebis.MAUI.ViewModel
             {
                 Debug.WriteLine("Connecting to MySQL...");
                 conn.Open();
-                MySqlCommand command = new MySqlCommand("SELECT * FROM Borne;", conn);
+                MySqlCommand borne = new MySqlCommand("SELECT * FROM `borne` JOIN `typecharge` ON `borne`.`idBorne` = `typecharge`.`codeTypeCharge`;", conn);
 
-                MySqlDataReader reader = command.ExecuteReader();
+                MySqlDataReader reader = borne.ExecuteReader();
 
                 while (reader.Read())
                 {
                     Resultats.Add(reader.GetString(0));
                     Resultats.Add(reader.GetString(1));
                     Resultats.Add(reader.GetString(2));
+                    Resultats.Add(reader.GetString(6));
                 }
             }
             catch (Exception ex)
