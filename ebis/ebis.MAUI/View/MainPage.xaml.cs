@@ -1,7 +1,7 @@
 ﻿using ebis.MAUI.ViewModel;
 using System;
 
-namespace ebis.MAUI;
+namespace ebis.MAUI.View;
 
 
 public partial class MainPage : ContentPage
