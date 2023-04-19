@@ -1,4 +1,5 @@
-﻿using ebis.MAUI.OperationRechargement;
+﻿using ebis.MAUI.JournalEntretien;
+using ebis.MAUI.OperationRechargement;
 using ebis.MAUI.ViewModel;
 using System;
 
@@ -27,6 +28,6 @@ public partial class MainPage : ContentPage
 
     private async void OnPage3ButtonClicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new MainPage());
+        await Navigation.PushAsync(new JournalEntretienPage());
     }
 }

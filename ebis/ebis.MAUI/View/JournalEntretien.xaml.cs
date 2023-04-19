@@ -1,9 +1,17 @@
-namespace ebis.MAUI.View;
+using ebis.MAUI.ViewModel;
+using System;
+using System.Security.Cryptography.X509Certificates;
 
-public partial class NewPage1 : ContentPage
+namespace ebis.MAUI.JournalEntretien;
+
+
+public partial class JournalEntretienPage : ContentPage
 {
-	public NewPage1()
-	{
-		InitializeComponent();
-	}
+    public JournalEntretienPage()
+    {
+        InitializeComponent();
+        var EntretienviewModel = new JournalEntretienViewModel();
+        EntretienviewModel.JournalEntretienDB();
+        this.BindingContext = EntretienviewModel;
+    }
 }
