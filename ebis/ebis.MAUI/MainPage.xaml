@@ -1,41 +1,86 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ebis.MAUI.MainPage">
-
+             x:Class="ebis.MAUI.MainPage"
+              BackgroundColor="White">
     <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+        <StackLayout Spacing="25" Margin="20">
+            
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+                
+                <Image Source="ebis_logo.png" 
+           WidthRequest="60" 
+           HeightRequest="60" 
+           Margin="10,0,0,0"
+           VerticalOptions="Center"/>
+
+                
+                <StackLayout 
+        Orientation="Horizontal"
+        HorizontalOptions="CenterAndExpand"
+        VerticalOptions="Center"
+        Grid.Row="0"
+        Grid.Column="1"
+        Spacing="10">
+                    <Label Text="Localisation des eBIS" 
+               TextColor="Green" 
+               FontSize="16" 
+               HorizontalOptions="Start" />
+                    <Label Text="Tableau de bord" 
+               TextColor="Green" 
+               FontSize="16" 
+               HorizontalOptions="Start" />
+                    <Label Text="Journal d'opération"
+               TextColor="Green" 
+               FontSize="16" 
+               HorizontalOptions="Start" />
+                    <Label Text="Gestion technicien" 
+               TextColor="Green" 
+               FontSize="16" 
+               HorizontalOptions="Start" />
+                </StackLayout>
+
+               
+                <Grid Grid.Row="1">
+                    
+                </Grid>
+            </Grid>
+
+
+            
+            <Label 
+                Text="Localisation des eBIS" 
+                TextColor="#1F1072" 
+                FontSize="20" 
+                VerticalOptions="Center" />
+
+            
+            <Label 
+                Text="Carte d'identité des bornes" 
+                TextColor="#1F1072" 
+                FontSize="20" 
+                VerticalOptions="Center" />
 
             <Label
                 Text="Hello, World!"
                 SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
+                FontSize="24"
                 HorizontalOptions="Center" />
 
             <Label
                 Text="Welcome to .NET Multi-platform App UI"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
+                FontSize="16"
                 HorizontalOptions="Center" />
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-
-        </VerticalStackLayout>
+        </StackLayout>
     </ScrollView>
-
 </ContentPage>
