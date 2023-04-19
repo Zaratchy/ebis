@@ -1,4 +1,7 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using ebis.MAUI.Model;
+using ebis.MAUI;
+using Microsoft.Extensions.Logging;
+using ebis.MAUI.ViewModel;
 
 namespace ebis.MAUI;
 
@@ -18,7 +21,9 @@ public static class MauiProgram
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
+        builder.Services.AddSingleton<MainPage>();
+		builder.Services.AddSingleton<StatViewModel>();
 
-		return builder.Build();
+        return builder.Build();
 	}
 }
