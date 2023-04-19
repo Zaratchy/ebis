@@ -40482,11 +40482,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\liber\\OneDrive\\Documents\\Valarep\\cours\\C#\\project_ebis\\ebis\\ebis.MAUI\\ebis.MAUI.csproj",
+      "projectUniqueName": "C:\\Users\\liber\\OneDrive\\Documents\\Valarep\\cours\\C#\\ebis\\ebis\\ebis.MAUI\\ebis.MAUI.csproj",
       "projectName": "ebis.MAUI",
-      "projectPath": "C:\\Users\\liber\\OneDrive\\Documents\\Valarep\\cours\\C#\\project_ebis\\ebis\\ebis.MAUI\\ebis.MAUI.csproj",
+      "projectPath": "C:\\Users\\liber\\OneDrive\\Documents\\Valarep\\cours\\C#\\ebis\\ebis\\ebis.MAUI\\ebis.MAUI.csproj",
       "packagesPath": "C:\\Users\\liber\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\liber\\OneDrive\\Documents\\Valarep\\cours\\C#\\project_ebis\\ebis\\ebis.MAUI\\obj\\",
+      "outputPath": "C:\\Users\\liber\\OneDrive\\Documents\\Valarep\\cours\\C#\\ebis\\ebis\\ebis.MAUI\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
