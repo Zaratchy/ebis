@@ -1,33 +1,43 @@
-﻿namespace ebis.MAUI.Model;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public class Bornes
+namespace ebis.MAUI.Model
 {
-    private string _firstName = string.Empty;
-    private string _lastName = string.Empty;
-    private string _phone = string.Empty;
-
-    public string FirstName
+    public class Borne : INotifyPropertyChanged
     {
-        get { return _firstName; }
-        set { _firstName = value; }
-    }
 
-    public string LastName
-    {
-        get { return _lastName; }
-        set { _lastName = value; }
-    }
+        private int IdBorne;
+        private DateTime DateMiseEnService;
+        private DateTime DateDerniereRevision;
 
-    public string Phone
-    {
-        get { return _phone; }
-        set { _phone = value; }
-    }
 
-    public Bornes(string firstName, string lastName, string phone)
-    {
-        FirstName = firstName;
-        LastName = lastName;
-        Phone = phone;
+        public int idBorne
+        {
+            get { return IdBorne; }
+            set { IdBorne = value; OnPropertyChanged("idBorne"); }
+        }
+        public DateTime dateMiseEnService
+        {
+            get { return DateMiseEnService; }
+            set { DateMiseEnService = value; OnPropertyChanged("dateMiseEnService"); }
+        }
+        public DateTime dateDerniereRevision
+        {
+            get { return DateDerniereRevision; }
+            set { DateDerniereRevision = value; OnPropertyChanged("dateDerniereRevision"); }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void OnPropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
     }
 }

@@ -1,21 +1,50 @@
-﻿using ebis.MAUI.Model;
+﻿using MySql.Data.MySqlClient;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Data;
+using System.Diagnostics;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace ebis.MAUI.ViewModel;
-
-public class BornesViewModel
+namespace ebis.MAUI.ViewModel
 {
-    private List<Bornes> bornesCollection = new List<Bornes>();
-
-    public BornesViewModel()
+    public class StatViewModel : BindableObject
     {
-        bornesCollection.Add(new Bornes("Marie", "White", "+1-809-554-6055"));
-        bornesCollection.Add(new Bornes("Paola", "Pullman", "+1-809-506-5655"));
-        bornesCollection.Add(new Bornes("Joseph", "McDonalds", "+1-809-684-4876"));
-    }
+        private string connectionString = "server=localhost;user=root;database=ebis;port=3306;password=";
 
-    public List<Bornes> StudentsCollection
-    {
-        get { return bornesCollection; }
-        set { bornesCollection = value; }
+        public ObservableCollection<string> Resultats { get; set; }
+
+        public StatViewModel()
+        {
+            Resultats = new ObservableCollection<string>();
+        }
+
+        public void SelectToDatabase()
+        {
+            MySqlConnection conn = new MySqlConnection(this.connectionString);
+            try
+            {
+                Debug.WriteLine("Connecting to MySQL...");
+                conn.Open();
+                MySqlCommand command = new MySqlCommand("SELECT * FROM Borne;", conn);
+
+                MySqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Resultats.Add(reader.GetString(0));
+                    Resultats.Add(reader.GetString(1));
+                    Resultats.Add(reader.GetString(2));
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.ToString());
+            }
+            conn.Close();
+            Debug.WriteLine("Done.");
+        }
     }
 }
