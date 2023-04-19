@@ -40476,24 +40476,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\liber\\.nuget\\packages\\": {},
+    "C:\\Users\\Julian\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\liber\\OneDrive\\Documents\\Valarep\\cours\\C#\\project_ebis\\ebis\\ebis.MAUI\\ebis.MAUI.csproj",
+      "projectUniqueName": "C:\\VSProject\\ebis\\ebis\\ebis.MAUI\\ebis.MAUI.csproj",
       "projectName": "ebis.MAUI",
-      "projectPath": "C:\\Users\\liber\\OneDrive\\Documents\\Valarep\\cours\\C#\\project_ebis\\ebis\\ebis.MAUI\\ebis.MAUI.csproj",
-      "packagesPath": "C:\\Users\\liber\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\liber\\OneDrive\\Documents\\Valarep\\cours\\C#\\project_ebis\\ebis\\ebis.MAUI\\obj\\",
+      "projectPath": "C:\\VSProject\\ebis\\ebis\\ebis.MAUI\\ebis.MAUI.csproj",
+      "packagesPath": "C:\\Users\\Julian\\.nuget\\packages\\",
+      "outputPath": "C:\\VSProject\\ebis\\ebis\\ebis.MAUI\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\liber\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Julian\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
