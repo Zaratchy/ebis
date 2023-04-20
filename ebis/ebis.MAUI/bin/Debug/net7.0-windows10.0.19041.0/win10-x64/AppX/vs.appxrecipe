@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\Pierre\OneDrive - LYRECO MANAGEMENT\Documents\CDA\Project-eBIS\ebis\ebis.MAUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-04-20T12:28:27.962</Modified>
+      <Modified>2023-04-20T13:20:48.668</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Pierre\OneDrive - LYRECO MANAGEMENT\Documents\CDA\Project-eBIS\ebis\ebis.MAUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-04-20T12:28:27.337</Modified>
+      <Modified>2023-04-20T13:20:47.531</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Pierre\OneDrive - LYRECO MANAGEMENT\Documents\CDA\Project-eBIS\ebis\ebis.MAUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ebis.MAUI.runtimeconfig.json">
       <PackagePath>ebis.MAUI.runtimeconfig.json</PackagePath>
-      <Modified>2023-04-19T11:54:11.023</Modified>
+      <Modified>2023-04-20T13:15:31.709</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Pierre\OneDrive - LYRECO MANAGEMENT\Documents\CDA\Project-eBIS\ebis\ebis.MAUI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ebis.MAUI.dll">
       <PackagePath>ebis.MAUI.dll</PackagePath>
-      <Modified>2023-04-20T12:28:26.296</Modified>
+      <Modified>2023-04-20T13:20:46.240</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Pierre\OneDrive - LYRECO MANAGEMENT\Documents\CDA\Project-eBIS\ebis\ebis.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ebis.MAUI.exe</PackagePath>
-      <Modified>2023-04-20T12:28:26.307</Modified>
+      <Modified>2023-04-20T13:20:46.267</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Pierre\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -991,7 +991,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Pierre\OneDrive - LYRECO MANAGEMENT\Documents\CDA\Project-eBIS\ebis\ebis.MAUI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ebis.MAUI.deps.json">
       <PackagePath>ebis.MAUI.deps.json</PackagePath>
-      <Modified>2023-04-20T12:28:27.807</Modified>
+      <Modified>2023-04-20T13:20:48.441</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.81\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
