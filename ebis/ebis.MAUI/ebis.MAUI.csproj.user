@@ -9,5 +9,8 @@
     <MauiXaml Update="View\JournalEntretien.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="View\Dashboard.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
   </ItemGroup>
 </Project>

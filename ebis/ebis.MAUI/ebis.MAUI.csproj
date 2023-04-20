@@ -57,10 +57,16 @@
 	  <Compile Update="View\JournalEntretien.xaml.cs">
 	    <DependentUpon>JournalEntretien.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="View\Dashboard.xaml.cs">
+	    <DependentUpon>Dashboard.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Update="View\JournalEntretien.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\Dashboard.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

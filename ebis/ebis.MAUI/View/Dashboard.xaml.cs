@@ -1,18 +1,18 @@
-﻿using ebis.MAUI.JournalEntretien;
+using ebis.MAUI.JournalEntretien;
 using ebis.MAUI.OperationRechargement;
-using ebis.MAUI.ViewModel;
+using ebis.MAUI.Dashboard;
 using System;
 
 namespace ebis.MAUI.View;
 
 
-public partial class MainPage : ContentPage
+public partial class DashboardPage : ContentPage
 {
-    public MainPage()
+    public DashboardPage()
     {
         InitializeComponent();
-        var viewModel = new StatViewModel();
-        viewModel.SelectToDatabase();
+        var viewModel = new DashViewModel();
+        viewModel.DashboardDB();
         this.BindingContext = viewModel;
 
     }
@@ -30,6 +30,7 @@ public partial class MainPage : ContentPage
     {
         await Navigation.PushAsync(new JournalEntretienPage());
     }
+
     private async void OnPage4ButtonClicked(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new DashboardPage());
