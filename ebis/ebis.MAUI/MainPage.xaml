@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ebis.MAUI.MainPage"
              xmlns:vm="clr-namespace:ebis.MAUI.ViewModel"
+             xmlns:model="clr-namespace:ebis.MAUI.Model"
              x:DataType="vm:StatViewModel"
              Title="Liste des bornes"
              BackgroundColor="Black">
@@ -76,7 +77,7 @@
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
 
-            <ListView ItemsSource="{Binding Resultats}">
+            <ListView ItemsSource="{Binding Bornes}">
                 <ListView.Header>
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -92,7 +93,7 @@
                     </Grid>
                 </ListView.Header>
                 <ListView.ItemTemplate>
-                    <DataTemplate>
+                    <DataTemplate x:DataType="model:Borne">
                         <ViewCell>
                             <Grid>
                                 <Grid.ColumnDefinitions>
@@ -101,10 +102,10 @@
                                     <ColumnDefinition Width="*" />
                                     <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
-                                <Label Grid.Column="0" Text="{Binding .}" />
-                                <Label Grid.Column="1" Text="{Binding .}" />
-                                <Label Grid.Column="2" Text="{Binding .}" />
-                                <Label Grid.Column="3" Text="{Binding .}" />
+                                <Label Grid.Column="0" Text="{Binding idBorne}" />
+                                <Label Grid.Column="1" Text="{Binding dateMiseEnService}" />
+                                <Label Grid.Column="2" Text="{Binding dateDerniereRevision}" />
+                                <Label Grid.Column="3" Text="{Binding libelleTypeCharge}" />
                             </Grid>
                         </ViewCell>
                     </DataTemplate>

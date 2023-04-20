@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ebis.MAUI.Services;
+
 
 namespace ebis.MAUI.Model
 {
@@ -13,6 +15,7 @@ namespace ebis.MAUI.Model
         private int IdBorne;
         private DateTime DateMiseEnService;
         private DateTime DateDerniereRevision;
+        private string LibelleTypeCharge;
 
 
         public int idBorne
@@ -29,6 +32,11 @@ namespace ebis.MAUI.Model
         {
             get { return DateDerniereRevision; }
             set { DateDerniereRevision = value; OnPropertyChanged("dateDerniereRevision"); }
+        }
+        public string libelleTypeCharge
+        {
+            get { return LibelleTypeCharge; }
+            set { LibelleTypeCharge = value; OnPropertyChanged("codeTypeCharge"); }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
