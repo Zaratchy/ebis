@@ -21,6 +21,7 @@ namespace ebis.MAUI.ViewModel
             Resultats = new ObservableCollection<string>();
         }
 
+            
         public void SelectToDatabase()
         {
             MySqlConnection conn = new MySqlConnection(this.connectionString);
@@ -39,6 +40,7 @@ namespace ebis.MAUI.ViewModel
                     Resultats.Add(reader.GetString(2));
                     Resultats.Add(reader.GetString(6));
                 }
+               
             }
             catch (Exception ex)
             {
