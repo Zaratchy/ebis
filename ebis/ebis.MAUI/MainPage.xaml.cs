@@ -6,11 +6,9 @@ namespace ebis.MAUI;
 
 public partial class MainPage : ContentPage
 {
-    public MainPage()
+    public MainPage(StatViewModel viewModel)
     {
         InitializeComponent();
-        var viewModel = new StatViewModel();
-        viewModel.SelectToDatabase();
         this.BindingContext = viewModel;
     }
 }
