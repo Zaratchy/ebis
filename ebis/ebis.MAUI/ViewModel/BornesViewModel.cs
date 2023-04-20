@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿using ebis.MAUI.Model;
 using ebis.MAUI.Services;
+=======
+﻿using ebis.MAUI.View;
+>>>>>>> feature/journalentretien
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -17,13 +21,20 @@ namespace ebis.MAUI.ViewModel
     {
         private string connectionString = "server=localhost;user=root;database=ebis;port=3306;password=";
 
+<<<<<<< HEAD
         public ObservableCollection<Borne> Bornes { get; }
+=======
+        
+
+        public ObservableCollection<string> Resultats { get; set; }
+>>>>>>> feature/journalentretien
 
         BddService service;
 
         public StatViewModel(BddService service)
         {
 
+<<<<<<< HEAD
             this.service = service;
 
             Bornes = new ObservableCollection<Borne>();
@@ -32,6 +43,13 @@ namespace ebis.MAUI.ViewModel
 
 
             foreach (var borne in bornes)
+=======
+      
+        public void SelectToDatabase()
+        {
+            MySqlConnection conn = new MySqlConnection(this.connectionString);
+            try
+>>>>>>> feature/journalentretien
             {
                 Bornes.Add(borne);
             }
@@ -39,4 +57,6 @@ namespace ebis.MAUI.ViewModel
             
         
     }
+
+
 }

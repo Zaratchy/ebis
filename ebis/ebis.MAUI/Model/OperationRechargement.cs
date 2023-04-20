@@ -10,16 +10,27 @@ namespace ebis.MAUI.Model
     public class OperationRechargement : INotifyPropertyChanged
     {
 
+<<<<<<< HEAD
         private int NumOperation;
+=======
+        private int numOperation;
+>>>>>>> feature/journalentretien
         private DateTime DateHeureDebut;
         private DateTime DateHeureFin;
         private int NbrKwH;
 
 
+<<<<<<< HEAD
         public int numOperation
         {
             get { return NumOperation; }
             set { NumOperation = value; OnPropertyChanged("numOperation"); }
+=======
+        public int NumOperation
+        {
+            get { return numOperation; }
+            set { numOperation = value; OnPropertyChanged("NumOperation"); }
+>>>>>>> feature/journalentretien
         }
         public DateTime dateHeureDebut
         {

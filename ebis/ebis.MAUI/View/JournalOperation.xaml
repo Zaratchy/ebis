@@ -3,6 +3,125 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ebis.MAUI.OperationRechargement.JournalOperationPage"
              xmlns:vm="clr-namespace:ebis.MAUI.ViewModel"
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:ebis/ebis.MAUI/MainPage.xaml
+             xmlns:model="clr-namespace:ebis.MAUI.Model"
+             x:DataType="vm:StatViewModel"
+             Title="Liste des bornes"
+             BackgroundColor="Black">
+
+    <ScrollView>
+        <StackLayout Spacing="25" Margin="20" HorizontalOptions="Center">
+
+            <!-- Navbar -->
+            <Grid HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Logo -->
+                <Image Source="ebis_logo.png" 
+           WidthRequest="60" 
+           HeightRequest="60" 
+           Margin="10,0,0,0"
+           VerticalOptions="Center"/>
+
+                <!-- Navbar items -->
+                <StackLayout 
+        Orientation="Horizontal"
+        HorizontalOptions="CenterAndExpand"
+        VerticalOptions="Center"
+        Grid.Row="0"
+        Grid.Column="1"
+        Spacing="10">
+                    <Label Text="Localisation des eBIS" 
+               TextColor="Green" 
+               FontSize="16" 
+               HorizontalOptions="Start" />
+                    <Label Text="Tableau de bord" 
+               TextColor="Green" 
+               FontSize="16" 
+               HorizontalOptions="Start" />
+                    <Label Text="Journal d'opération"
+               TextColor="Green" 
+               FontSize="16" 
+               HorizontalOptions="Start" />
+                    <Label Text="Gestion technicien" 
+               TextColor="Green" 
+               FontSize="16" 
+               HorizontalOptions="Start" />
+                </StackLayout>
+
+                <!-- Main content -->
+                <Grid Grid.Row="1" HorizontalOptions="Center">
+                    <!-- Add your main content here -->
+                </Grid>
+            </Grid>
+
+            <!-- Localisation des eBIS titre -->
+            <Label 
+                Text="Localisation des eBIS" 
+                TextColor="#1F1072" 
+                FontSize="20" 
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+
+            <!-- Carte d'identité des bornes titre -->
+            <Label 
+                Text="Carte d'identité des bornes" 
+                TextColor="#1F1072" 
+                FontSize="20"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <ListView ItemsSource="{Binding Bornes}">
+                <ListView.Header>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Text="Borne numéro" FontAttributes="Bold" />
+                        <Label Grid.Column="1" Text="Date d'installation" FontAttributes="Bold" />
+                        <Label Grid.Column="2" Text="Dernière maintenance" FontAttributes="Bold" />
+                        <Label Grid.Column="3" Text="Type de charge" FontAttributes="Bold" />
+                    </Grid>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Borne">
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="{Binding idBorne}" />
+                                <Label Grid.Column="1" Text="{Binding dateMiseEnService}" />
+                                <Label Grid.Column="2" Text="{Binding dateDerniereRevision}" />
+                                <Label Grid.Column="3" Text="{Binding libelleTypeCharge}" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
+========
+>>>>>>> feature/journalentretien
              x:DataType="vm:JournalOperationViewModel"
              Title="Journal d'opérations">
 
@@ -15,5 +134,10 @@
             </ListView.ItemTemplate>
         </ListView>
     </StackLayout>
+<<<<<<< HEAD
 
 </ContentPage>
+=======
+</ContentPage>
+>>>>>>>> feature/journalentretien:ebis/ebis.MAUI/View/JournalOperation.xaml
+>>>>>>> feature/journalentretien

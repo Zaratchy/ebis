@@ -10,29 +10,25 @@ using System.Threading.Tasks;
 
 namespace ebis.MAUI.ViewModel
 {
-    public class JournalOperationViewModel : BindableObject
+    public class JournalEntretienViewModel : BindableObject
     {
         private string connectionString = "server=localhost;user=root;database=ebis;port=3306;password=";
 
         public ObservableCollection<string> Resultats { get; set; }
 
-        public JournalOperationViewModel()
+        public JournalEntretienViewModel()
         {
             Resultats = new ObservableCollection<string>();
         }
 
-        public void OperationRechargementDB()
+        public void JournalEntretienDB()
         {
             MySqlConnection conn = new MySqlConnection(this.connectionString);
             try
             {
                 Debug.WriteLine("Connecting to MySQL...");
                 conn.Open();
-<<<<<<< HEAD
-                MySqlCommand command = new MySqlCommand("SELECT * FROM OperationRechargement;", conn);
-=======
-                MySqlCommand command = new MySqlCommand("SELECT * FROM operationrechargement;", conn);
->>>>>>> feature/journalentretien
+                MySqlCommand command = new MySqlCommand("SELECT * FROM Elements;", conn);
 
                 MySqlDataReader reader = command.ExecuteReader();
 
