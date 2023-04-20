@@ -10,25 +10,25 @@ namespace ebis.MAUI.Model
     public class Element : INotifyPropertyChanged
     {
 
-        private int IdElement;
-        private string Nom;
-        private string Status;
+        private int idElement;
+        private string nom;
+        private string status;
 
 
-        public int idElement
+        public int IdElement
         {
-            get { return IdElement; }
-            set { IdElement = value; OnPropertyChanged("idElement"); }
+            get { return idElement; }
+            set { idElement = value; OnPropertyChanged("IdElement"); }
         }
-        public string nom
+        public string Nom
         {
-            get { return Nom; }
-            set { Nom = value; OnPropertyChanged("nom"); }
+            get { return nom; }
+            set { nom = value; OnPropertyChanged("Nom"); }
         }
-        public string status
+        public string Status
         {
-            get { return Status; }
-            set { Status = value; OnPropertyChanged("status"); }
+            get { return status; }
+            set { status = value; OnPropertyChanged("Status"); }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

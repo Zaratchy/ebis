@@ -28,7 +28,7 @@ namespace ebis.MAUI.ViewModel
             {
                 Debug.WriteLine("Connecting to MySQL...");
                 conn.Open();
-                MySqlCommand command = new MySqlCommand("SELECT * FROM OperationRechargement;", conn);
+                MySqlCommand command = new MySqlCommand("SELECT * FROM operationrechargement;", conn);
 
                 MySqlDataReader reader = command.ExecuteReader();
 
