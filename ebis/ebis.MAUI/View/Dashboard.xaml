@@ -4,7 +4,7 @@
              x:Class="ebis.MAUI.View.DashboardPage"
              xmlns:vm="clr-namespace:ebis.MAUI.Dashboard"
              x:DataType="vm:DashViewModel"
-             Title="Dashboard">
+             Title="Durée de fontionnement moyen d'un élément">
 
     <StackLayout>
         <ListView ItemsSource="{Binding Resultats}">
