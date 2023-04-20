@@ -38,6 +38,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = ebis.MAUI.Resources.Styles
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/VSProject/ebis/ebis/ebis.MAUI/View/BadElement.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ebis.MAUI.View.BadElement.xaml
+build_metadata.AdditionalFiles.TargetPath = View\BadElement.xaml
+build_metadata.AdditionalFiles.RelativePath = View\BadElement.xaml
+
 [C:/VSProject/ebis/ebis/ebis.MAUI/View/Dashboard.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ebis.MAUI.View.Dashboard.xaml

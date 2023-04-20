@@ -60,6 +60,9 @@
 	  <Compile Update="View\Dashboard.xaml.cs">
 	    <DependentUpon>Dashboard.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="View\BadElement.xaml.cs">
+	    <DependentUpon>BadElement.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -67,6 +70,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\Dashboard.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\BadElement.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

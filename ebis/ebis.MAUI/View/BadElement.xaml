@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ebis.MAUI.View.DashboardPage"
-             xmlns:vm="clr-namespace:ebis.MAUI.Dashboard"
-             x:DataType="vm:DashViewModel"
+             x:Class="ebis.MAUI.View.BadElementPage"
+             xmlns:vm="clr-namespace:ebis.MAUI.BadElement"
+             x:DataType="vm:BadElementViewModel"
              Title="Durée de fontionnement moyen d'un élément">
 
     <StackLayout>
