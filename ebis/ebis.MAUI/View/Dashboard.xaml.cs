@@ -2,6 +2,7 @@ using ebis.MAUI.JournalEntretien;
 using ebis.MAUI.OperationRechargement;
 using ebis.MAUI.Dashboard;
 using System;
+using ebis.MAUI.NbrMoyAccident;
 
 namespace ebis.MAUI.View;
 
@@ -28,6 +29,11 @@ public partial class DashboardPage : ContentPage
 
     private async void OnPage7ButtonClicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new JournalEntretienPage());
+        await Navigation.PushAsync(new GoodElementPage());
+    }
+
+    private async void OnPage8ButtonClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new NombreMoyenAccidentPage());
     }
 }

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ebis.MAUI.View.TechnicienPage"
+             xmlns:vm="clr-namespace:ebis.MAUI.ViewModel"
+             x:DataType="vm:TechnicienViewModel"
+             Title="Liste des bornes">
+
+    <StackLayout>
+        <ListView ItemsSource="{Binding Resultats}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding .}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Button Text="Journal des opérations" Clicked="OnPage1ButtonClicked" BackgroundColor="#2196F3" TextColor="White" Margin="0,0,10,0" />
+            <Button Text="Journal des incidents" Clicked="OnPage2ButtonClicked" BackgroundColor="#2196F3" TextColor="White" Margin="10,0,10,0" />
+            <Button Text="Journal d'entetien" Clicked="OnPage3ButtonClicked" BackgroundColor="#2196F3" TextColor="White" Margin="10,0,0,0" />
+            <Button Text="DashBoard" Clicked="OnPage4ButtonClicked" BackgroundColor="#2196F3" TextColor="White" Margin="10,0,0,0" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

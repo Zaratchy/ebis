@@ -1,19 +1,19 @@
 using ebis.MAUI.JournalEntretien;
 using ebis.MAUI.OperationRechargement;
 using ebis.MAUI.Dashboard;
-using ebis.MAUI.BadElement;
+using ebis.MAUI.GoodElement;
 using System;
 using ebis.MAUI.NbrMoyAccident;
 
 namespace ebis.MAUI.View;
 
 
-public partial class BadElementPage : ContentPage
+public partial class GoodElementPage : ContentPage
 {
-    public BadElementPage()
+    public GoodElementPage()
     {
         InitializeComponent();
-        var viewModel = new BadElementViewModel();
+        var viewModel = new GoodElementViewModel();
         viewModel.BadElementDB();
         this.BindingContext = viewModel;
 
@@ -32,10 +32,10 @@ public partial class BadElementPage : ContentPage
     {
         await Navigation.PushAsync(new GoodElementPage());
     }
-
     private async void OnPage8ButtonClicked(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new NombreMoyenAccidentPage());
     }
+
 
 }

@@ -63,6 +63,18 @@
 	  <Compile Update="View\BadElement.xaml.cs">
 	    <DependentUpon>BadElement.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="View\GoodElement.xaml.cs">
+	    <DependentUpon>GoodElement.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="View\JournalIncidents.xaml.cs">
+	    <DependentUpon>JournalIncidents.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="View\NombreMoyAccident.xaml.cs">
+	    <DependentUpon>NombreMoyAccident.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="View\Technicien.xaml.cs">
+	    <DependentUpon>Technicien.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -73,6 +85,18 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\BadElement.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\GoodElement.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\JournalIncidents.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\NombreMoyAccident.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\Technicien.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
