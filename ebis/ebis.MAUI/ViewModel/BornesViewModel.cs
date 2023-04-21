@@ -32,7 +32,7 @@ namespace ebis.MAUI.ViewModel
             {
                 Debug.WriteLine("Connecting to MySQL...");
                 conn.Open();
-                MySqlCommand command = new MySqlCommand("SELECT * FROM Borne;", conn);
+                MySqlCommand command = new MySqlCommand("SELECT borne.idBorne, borne.dateMiseEnService, borne.dateDerniereRevision, typecharge.libelleTypeCharge FROM borne INNER JOIN typecharge ON typecharge.codeTypeCharge = borne.codeTypeCharge", conn);
 
                 MySqlDataReader reader = command.ExecuteReader();
 

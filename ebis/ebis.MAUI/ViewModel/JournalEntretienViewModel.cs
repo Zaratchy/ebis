@@ -28,7 +28,7 @@ namespace ebis.MAUI.ViewModel
             {
                 Debug.WriteLine("Connecting to MySQL...");
                 conn.Open();
-                MySqlCommand command = new MySqlCommand("SELECT * FROM Elements;", conn);
+                MySqlCommand command = new MySqlCommand("SELECT borne.idBorne, station.adresseRue, station.Ville, technicien.nom, technicien.prenom, entretien.Date_d_entretien, elements.nom, elements.status FROM borne\r\nINNER JOIN station ON station.idStation = borne.id_Station \r\nINNER JOIN entretien ON entretien.IdEntretien = borne.entretien\r\nINNER JOIN technicien ON technicien.idTechnicien = entretien.id_Technicien \r\nINNER JOIN elements ON elements.id_Borne = borne.idBorne;", conn);
 
                 MySqlDataReader reader = command.ExecuteReader();
 
@@ -38,6 +38,10 @@ namespace ebis.MAUI.ViewModel
                     Resultats.Add(reader.GetString(1));
                     Resultats.Add(reader.GetString(2));
                     Resultats.Add(reader.GetString(3));
+                    Resultats.Add(reader.GetString(4));
+                    Resultats.Add(reader.GetString(5));
+                    Resultats.Add(reader.GetString(6));
+                    Resultats.Add(reader.GetString(7));
                 }
             }
             catch (Exception ex)

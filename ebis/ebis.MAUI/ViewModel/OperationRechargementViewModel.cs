@@ -28,7 +28,7 @@ namespace ebis.MAUI.ViewModel
             {
                 Debug.WriteLine("Connecting to MySQL...");
                 conn.Open();
-                MySqlCommand command = new MySqlCommand("SELECT * FROM operationrechargement;", conn);
+                MySqlCommand command = new MySqlCommand("SELECT  borne.idBorne, typecharge.libelleTypeCharge,operationrechargement.dateHeureDebut, operationrechargement.dateHeureFin, operationrechargement.nbrKwH FROM operationrechargement\r\nINNER JOIN borne ON borne.idBorne = operationrechargement.id_Borne\r\nINNER JOIN typecharge ON typecharge.codeTypeCharge = borne.codeTypeCharge;", conn);
 
                 MySqlDataReader reader = command.ExecuteReader();
 
@@ -38,6 +38,7 @@ namespace ebis.MAUI.ViewModel
                     Resultats.Add(reader.GetString(1));
                     Resultats.Add(reader.GetString(2));
                     Resultats.Add(reader.GetString(3));
+                    Resultats.Add(reader.GetString(4));
                 }
             }
             catch (Exception ex)
