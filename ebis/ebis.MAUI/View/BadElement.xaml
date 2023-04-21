@@ -6,7 +6,7 @@
              x:DataType="vm:BadElementViewModel"
              Title="Top 5 des éléments les plus défectueux sur les 5 dernières années">
 
-    <StackLayout>
+    <StackLayout HorizontalOptions="CenterAndExpand">
         <ListView ItemsSource="{Binding Resultats}">
             <ListView.ItemTemplate>
                 <DataTemplate>

@@ -6,7 +6,7 @@
              x:DataType="vm:JournalOperationViewModel"
              Title="Journal d'opérations">
 
-    <StackLayout>
+    <StackLayout HorizontalOptions="CenterAndExpand">
         <ListView ItemsSource="{Binding Resultats}">
             <ListView.ItemTemplate>
                 <DataTemplate>

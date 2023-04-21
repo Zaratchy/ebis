@@ -8,7 +8,7 @@
              xmlns:model="clr-namespace:ebis.MAUI.Model"
              Title="Nombre moyen d'accidents sur les 5 dernières années">
 
-    <StackLayout>
+    <StackLayout HorizontalOptions="CenterAndExpand">
         <ListView ItemsSource="{Binding Resultats}">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="model:Element">
@@ -16,6 +16,12 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Button Text="Menu" Clicked="OnPage5ButtonClicked" BackgroundColor="#2196F3" TextColor="White" Margin="0,0,10,0" />
+            <Button Text="Top 5 Défectueux" Clicked="OnPage6ButtonClicked" BackgroundColor="#2196F3" TextColor="White" Margin="10,0,10,0" />
+            <Button Text="Top 5 Fiables" Clicked="OnPage7ButtonClicked" BackgroundColor="#2196F3" TextColor="White" Margin="10,0,0,0" />
+            <Button Text="Nombre moyen d'accidents" Clicked="OnPage8ButtonClicked" BackgroundColor="#2196F3" TextColor="White" Margin="10,0,0,0" />
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>

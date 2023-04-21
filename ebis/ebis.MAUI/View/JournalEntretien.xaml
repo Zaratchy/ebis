@@ -8,7 +8,7 @@
              xmlns:model="clr-namespace:ebis.MAUI.Model"
              Title="Journal d'entretiens">
 
-    <StackLayout>
+    <StackLayout HorizontalOptions="CenterAndExpand">
         <ListView ItemsSource="{Binding Resultats}">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="model:Element">

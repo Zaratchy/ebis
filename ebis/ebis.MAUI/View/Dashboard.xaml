@@ -6,7 +6,7 @@
              x:DataType="vm:DashViewModel"
              Title="Durée de fontionnement moyen d'un élément">
 
-    <StackLayout>
+    <StackLayout HorizontalOptions="CenterAndExpand">
         <ListView ItemsSource="{Binding Resultats}">
             <ListView.ItemTemplate>
                 <DataTemplate>

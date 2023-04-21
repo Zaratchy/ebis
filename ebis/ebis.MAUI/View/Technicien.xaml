@@ -4,9 +4,9 @@
              x:Class="ebis.MAUI.View.TechnicienPage"
              xmlns:vm="clr-namespace:ebis.MAUI.ViewModel"
              x:DataType="vm:TechnicienViewModel"
-             Title="Liste des bornes">
+             Title="Techniciens par secteur">
 
-    <StackLayout>
+    <StackLayout HorizontalOptions="CenterAndExpand">
         <ListView ItemsSource="{Binding Resultats}">
             <ListView.ItemTemplate>
                 <DataTemplate>
