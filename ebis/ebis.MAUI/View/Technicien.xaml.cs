@@ -1,4 +1,5 @@
 using ebis.MAUI.JournalEntretien;
+using ebis.MAUI.JournalIncident;
 using ebis.MAUI.OperationRechargement;
 using ebis.MAUI.ViewModel;
 using System;
@@ -30,8 +31,16 @@ public partial class TechnicienPage : ContentPage
     {
         await Navigation.PushAsync(new JournalEntretienPage());
     }
+    private async void OnPage9ButtonClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new JournalIncidentPage());
+    }
     private async void OnPage4ButtonClicked(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new DashboardPage());
+    }
+    private async void OnPage10ButtonClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new TechnicienPage());
     }
 }

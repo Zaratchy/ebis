@@ -16,9 +16,11 @@
 
         </ListView>
         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Button Text="Menu" Clicked="OnPage2ButtonClicked" BackgroundColor="#2196F3" TextColor="White" Margin="0,0,10,0" />
             <Button Text="Journal des opérations" Clicked="OnPage1ButtonClicked" BackgroundColor="#2196F3" TextColor="White" Margin="0,0,10,0" />
-            <Button Text="Journal des incidents" Clicked="OnPage2ButtonClicked" BackgroundColor="#2196F3" TextColor="White" Margin="10,0,10,0" />
+            <Button Text="Journal des incidents" Clicked="OnPage9ButtonClicked" BackgroundColor="#2196F3" TextColor="White" Margin="10,0,10,0" />
             <Button Text="Journal d'entetien" Clicked="OnPage3ButtonClicked" BackgroundColor="#2196F3" TextColor="White" Margin="10,0,0,0" />
+            <Button Text="Techniciens" Clicked="OnPage10ButtonClicked" BackgroundColor="#2196F3" TextColor="White" Margin="10,0,0,0" />
             <Button Text="DashBoard" Clicked="OnPage4ButtonClicked" BackgroundColor="#2196F3" TextColor="White" Margin="10,0,0,0" />
         </StackLayout>
     </StackLayout>

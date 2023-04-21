@@ -6,7 +6,7 @@
              xmlns:vm="clr-namespace:ebis.MAUI.ViewModel"
              x:DataType="vm:NbrAccidentViewModel"
              xmlns:model="clr-namespace:ebis.MAUI.Model"
-             Title="Journal d'incidents">
+             Title="Nombre moyen d'accidents sur les 5 dernières années">
 
     <StackLayout>
         <ListView ItemsSource="{Binding Resultats}">

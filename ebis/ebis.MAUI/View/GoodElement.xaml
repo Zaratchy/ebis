@@ -4,7 +4,7 @@
              x:Class="ebis.MAUI.View.GoodElementPage"
              xmlns:vm="clr-namespace:ebis.MAUI.GoodElement"
              x:DataType="vm:GoodElementViewModel"
-             Title="Durée de fontionnement moyen d'un élément">
+             Title="Top 5 des éléments les plus fiables sur les 5 dernières années">
 
     <StackLayout>
         <ListView ItemsSource="{Binding Resultats}">

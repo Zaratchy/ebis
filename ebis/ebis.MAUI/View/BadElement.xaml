@@ -4,7 +4,7 @@
              x:Class="ebis.MAUI.View.BadElementPage"
              xmlns:vm="clr-namespace:ebis.MAUI.BadElement"
              x:DataType="vm:BadElementViewModel"
-             Title="Durée de fontionnement moyen d'un élément">
+             Title="Top 5 des éléments les plus défectueux sur les 5 dernières années">
 
     <StackLayout>
         <ListView ItemsSource="{Binding Resultats}">

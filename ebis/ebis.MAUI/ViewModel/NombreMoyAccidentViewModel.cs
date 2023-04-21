@@ -32,7 +32,7 @@ namespace ebis.MAUI.ViewModel
             {
                 Debug.WriteLine("Connecting to MySQL...");
                 conn.Open();
-                MySqlCommand command = new MySqlCommand("SELECT nom, prenom,secteurGeographique FROM technicien order BY secteurGeographique ASC;", conn);
+                MySqlCommand command = new MySqlCommand("SELECT COUNT(Date_incident) \r\nFROM controle\r\nWHERE month(Date_incident) = 1\r\nUNION\r\nSELECT COUNT(Date_incident) \r\nFROM controle\r\nWHERE month(Date_incident) = 2\r\nUNION\r\nSELECT COUNT(Date_incident) \r\nFROM controle\r\nWHERE month(Date_incident) = 3\r\nUNION\r\nSELECT COUNT(Date_incident) \r\nFROM controle\r\nWHERE month(Date_incident) = 4\r\nUNION\r\nSELECT COUNT(Date_incident) \r\nFROM controle\r\nWHERE month(Date_incident) = 5\r\nUNION\r\nSELECT COUNT(Date_incident) \r\nFROM controle\r\nWHERE month(Date_incident) = 6\r\nUNION\r\nSELECT COUNT(Date_incident) \r\nFROM controle\r\nWHERE month(Date_incident) = 7\r\nUNION\r\nSELECT COUNT(Date_incident) \r\nFROM controle\r\nWHERE month(Date_incident) = 8\r\nUNION\r\nSELECT COUNT(Date_incident) \r\nFROM controle\r\nWHERE month(Date_incident) = 9\r\nUNION\r\nSELECT COUNT(Date_incident) \r\nFROM controle\r\nWHERE month(Date_incident) = 10\r\nUNION\r\nSELECT COUNT(Date_incident) \r\nFROM controle\r\nWHERE month(Date_incident) = 11\r\nUNION\r\nSELECT COUNT(Date_incident) \r\nFROM controle\r\nWHERE month(Date_incident) = 12;", conn);
 
                 MySqlDataReader reader = command.ExecuteReader();
 
