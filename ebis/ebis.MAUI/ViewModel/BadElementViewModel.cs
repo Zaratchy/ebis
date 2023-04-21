@@ -32,7 +32,7 @@ namespace ebis.MAUI.BadElement
             {
                 Debug.WriteLine("Connecting to MySQL...");
                 conn.Open();
-                MySqlCommand command = new MySqlCommand("SELECT elements.nom, idBorne,DATEDIFF( DATE(NOW()),dateMiseEnService) - DATEDIFF(entretien.Date_d_entretien,Date_incident) AS DureeElement FROM borne JOIN controle ON (borne.idBorne = controle.idControle) JOIN entretien ON (entretien.IdEntretien = controle.idControle) JOIN elements ON elements.idElement = borne.idBorne WHERE year(dateMiseEnService) >= YEAR(DATE( NOW() ))-5 AND elements.status = 'Remplacé' ORDER BY DureeElement DESC;", conn);
+                MySqlCommand command = new MySqlCommand("SELECT elements.nom, idBorne,DATEDIFF( DATE(NOW()),dateMiseEnService) - DATEDIFF(entretien.Date_d_entretien,Date_incident) AS DureeElement FROM borne JOIN controle ON (borne.idBorne = controle.idControle) JOIN entretien ON (entretien.IdEntretien = controle.idControle) JOIN elements ON elements.idElement = borne.idBorne WHERE year(dateMiseEnService) >= YEAR(DATE( NOW() ))-5 AND elements.status = 'Remplacé' ORDER BY DureeElement ASC;", conn);
 
                 MySqlDataReader reader = command.ExecuteReader();
 

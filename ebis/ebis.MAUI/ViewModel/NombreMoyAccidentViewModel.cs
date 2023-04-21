@@ -40,7 +40,6 @@ namespace ebis.MAUI.ViewModel
                 {
                     Resultats.Add(reader.GetString(0));
                     Resultats.Add(reader.GetString(1));
-                    Resultats.Add(reader.GetString(2));
                 }
             }
             catch (Exception ex)
